@@ -84,7 +84,7 @@ li[active] {
 #sidebar-wrapper {
   font-family: 'Roboto', sans-serif;
   z-index: 1000;
-  margin-top: -80px;
+  margin-top: 5px;
   position: fixed;
   left: 0;
   width: 0;
@@ -112,7 +112,7 @@ li[active] {
 
 #menu-close {
   padding: 1px;
-  margin-top: -45px;
+  margin-top: -55px;
   margin-left: 30px;
 }
 
@@ -163,7 +163,7 @@ li[active] {
 
 #mainlogo {
   display: absolute;
-  margin-top: 10px;
+  margin-top: 10%;
   margin-bottom: 15px;
 }
 
@@ -300,4 +300,39 @@ footer {
 
 .contact-email {
   color: #333333;
+}
+
+/* Extra Small */
+@media(min-width:200px){
+  #mainlogo {
+    margin-top: 25%;
+  }
+}
+
+/* Small */
+@media(min-width:360px){
+  #mainlogo {
+    margin-top: 20%;
+  }
+}
+
+/* Medium */
+@media(min-width:768px){
+  #mainlogo {
+    margin-top: 10%;
+  }
+}
+
+/* Large */
+@media(min-width:1200px){
+  #mainlogo {
+    margin-top: 5%;
+  }
+}
+
+/* Extra Large */
+@media(min-width:1600px){
+  #mainlogo {
+    margin-top: 7.5%;
+  }
 }
