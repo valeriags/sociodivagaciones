@@ -32,23 +32,22 @@ btn-dark {
 
 #menu-toggle {
   z-index: 1;
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
   text-decoration: none;
-  vertical-align:baseline;
+  vertical-align: baseline;
   color: #ffffff;
   border-radius: 0;
 }
 
-#menu-toggle::after{
+#menu-toggle::after {
   content: 'menu';
   text-transform: uppercase;
   color: #333333;
   font-size: 15px;
   margin-left: 10px;
-  vertical-align:text-top;
-
+  vertical-align: text-top;
 }
 
 .toggle {
@@ -61,23 +60,25 @@ btn-dark {
   margin-left: 15px;
 }
 
+
 /*Breadcrums*/
 
 .breadcrumb {
-    float: right;
-    padding: 8px 15px;
-    margin-top: 20px;
-    background-color: #f4f7f6;
-    color: #1a1a1a;
+  float: right;
+  padding: 8px 15px;
+  margin-top: 20px;
+  background-color: #f4f7f6;
+  color: #1a1a1a;
 }
 
 li[active] {
   color: #666666;
 }
 
-.breadcrumb >li >a {
+.breadcrumb>li>a {
   color: #1a1a1a
 }
+
 
 /* Side Menu */
 
@@ -161,121 +162,88 @@ li[active] {
 
 /*Main*/
 
-#mainlogo {
-  display: absolute;
-  margin-top: 5%;
-  margin-bottom: 15px;
-}
-
-.list-inline {
-  display:inline-block;
-  margin-bottom: 50px;
-}
-
-.fa-facebook-square:hover {
-  color: #4d4d4d;
-}
-
-.fa-twitter:hover {
-  color: #4d4d4d;
-}
-
-i[aria-hidden] {
-  color: rgba(77, 77, 77, 0.3);
-  padding: 10px;
+.img-responsive {
+  max-width: 100%;
+  height: 660px;
+  background: url('http://lorempixel.com/1583/660') center center no-repeat;
+  background-size: cover;
+  margin-bottom: 5%;
 }
 
 
 /*Main Cards panel*/
 
-#cards-panel{
-  margin-bottom: 30px;
-}
-
-.row {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-.caja {
-  font-family: 'Open Sans', sans-serif;
-  /*box-sizing: border-box;*/
-  margin-bottom:35px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
-}
-
-.card-img-top {
-  width: 100%;
-  border-radius: 2px 2px 0 0;
-}
-
-.card-img-full {
-  width: 100%;
-  border-radius: 2px;
-}
-
-
-.card-block {
-  padding: 24px;
-  /*margin-left: auto;
-  margin-right: auto;*/
-  text-align: center;
-}
-
-#containerlabel {
-  width: 50%;
-  color: #939393;
-  background-color: #efefef;
-  text-transform: uppercase;
-  padding-top: 2.5px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 10px;
-  /*font-weight: 400;*/
-}
-
 .card-title {
-  font-size: 14px;
-  font-weight: 700;
-  color: #4d4d4d;
-  margin-top: 24px;
+  margin-top: -2%;
+  : padding: 0;
+  color: #333333;
   text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
 }
 
 .card-subtitle {
-  font-size: 14px;
-  font-weight: 400;
-  color: #4d4d4d;
-  margin-top: 3px;
+  color: #333333;
+  text-align: center;
 }
 
-.date {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #969696;
-}
-
-article {
-  text-align: justify;
-  font-size: 14px;
-  color: #969696;
-  margin-left: -10px;
-  margin-right: -10px;
-}
 
 /*hr*/
 
+#cont-article {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
 hr {
   border: 0;
-  clear:both;
-  display:block;
+  clear: both;
+  display: block;
   width: 96%;
   background-color: #b0b0b0;
   height: 1px;
   opacity: 0.5;
 }
+
+
+/*Articles*/
+
+blockquote {
+  font-family: "Open Sans", sans-serif;
+  line-height: 25px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.card-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  transform: scale(1, 0.5);
+  -webkit-transform: scale(1, 0.9);
+  /* Safari and Chrome */
+  -moz-transform: scale(1, 0.9);
+  /* Firefox */
+  -ms-transform: scale(1, 0.9);
+  /* IE 9+ */
+  -o-transform: scale(1, 0.9);
+  /* Opera */
+}
+
+.card-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.text-justify {
+  font-family: "Open Sans", sans-serif;
+  line-height: 35px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
 
 /* Footer */
 
@@ -302,37 +270,52 @@ footer {
   color: #333333;
 }
 
+
 /* Extra Small */
-@media(min-width:200px){
+
+
+/*@media(min-width:200px){
   #mainlogo {
     margin-top: 25%;
   }
-}
+}*/
+
 
 /* Small */
-@media(min-width:360px){
+
+
+/*@media(min-width:360px){
   #mainlogo {
     margin-top: 20%;
   }
-}
+}*/
+
 
 /* Medium */
-@media(min-width:768px){
+
+
+/*@media(min-width:768px){
   #mainlogo {
     margin-top: 10%;
   }
-}
+}*/
+
 
 /* Large */
-@media(min-width:1200px){
+
+
+/*@media(min-width:1200px){
   #mainlogo {
     margin-top: 5%;
   }
-}
+}*/
+
 
 /* Extra Large */
-@media(min-width:1600px){
+
+
+/*@media(min-width:1600px){
   #mainlogo {
     margin-top: 7.5%;
   }
-}
+}*/
