@@ -3,13 +3,17 @@
 
 <head>
   <meta charset="utf-8">
-  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Historias imaginarias o vividas con moralejas políticas o
+  sociales, humoradas y ocurrencias varias, Artículos sobre el destino de Argentina y del mundo, Correspondencia, comentarios y memoranda varios,
+  Sociologo Argentino, Dibujos.">
+  <meta name="keywords" content="heriberto muraro, sociodivagaciones, sociología,
+  sociólogo, sociedad, política argentina, opinion, divagaciones, análisis político, arte sociedad, dibujo a mano">
 
-  <title>SocioDivagaciones</title>
+  <title>Sociodivagaciones</title>
+
+  <link rel="icon" href=".\img\favicon.ico.png" sizes="16x16" type="image/png">
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,288 +22,394 @@
 
   <!-- jquery -->
   <script src=" https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   <!-- Image load -->
   <script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>
-  <!-- Masonry -->
-  <script src="https://unpkg.com/masonry-layout@4.2.0/dist/masonry.pkgd.min.js"></script>
 
   <!-- Custom Fonts -->
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-  <link href="https://file.myfontastic.com/UCUv5MuK8rvpxVYPFvT255/icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108346653-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108346653-1');
+  </script>
+
 </head>
 
 <body>
 
-  <!-- Navigation -->
+  <!-- Barra de navegacion -->
 
-  <a id="menu-toggle" href="#" class="btn-dark btn-lg toggle">
-      <i class="icon-menu"></i>
-</a>
-  <!-- <div class="container-fluid">
-    <ul class="breadcrumb">
-      <li><a href="#">Home</a></li>
-      <li class="active">Publicaciones</li>
-    </ul>
-  </div> -->
-  <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <a id="menu-close" href="#" class="btn btn-light btn-lg pull-left toggle">
-              <i class="icon-close"></i></a>
-      <ul>
-        <li>publicaciones
-          <li><a href="#top" onclick=$( "#menu-close").click();>cajón de sastre</a></li>
-          <li><a href="#top" onclick=$( "#menu-close").click();>relatos mínimos</a></li>
-          <li><a href="#top" onclick=$( "#menu-close").click();>explorando fronteras</a></li>
-        </li>
-      </ul>
-      <br>
-      <ul>
-        <li>mis dibujos
-          <li><a href="#top" onclick=$( "#menu-close").click();>mis dibujos</a></li>
-        </li>
-      </ul>
-      <br>
-      <ul>
-        <li>el autor
-          <li><a href="#top" onclick=$( "#menu-close").click();>heriberto muraro</a></li>
-        </li>
-      </ul>
-    </ul>
-  </nav>
-
-  <!-- Main -->
-
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-12 text-center">
-        <img src="img\mainlogo.png" class="center-block img-responsive" alt="sociodivagaciones.img" id="mainlogo">
-        <ul class="list-inline">
-          <li>
-            <a href="#" class="overlay"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="#" class="overlay"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-          </li>
-        </ul>
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+      <div class="menu-collapsed">
+        <h3 class="nowrap">autor</h3>
+        <h3 style="display: none"></h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12">
+              <p class="text-justify" style="display: none">
+                <b>HERIBERTO MURARO</b>
+                <br><br> Nació en Buenos Aires en 1937. Estudió dibujo y grabado con Clément Moreau (Carlos Meffert). Cursó la carrera de Arquitectura durante tres años teniendo la oportunidad de formarse en dibujo con el maestro Lorenzo Gigli.
+                <br><br> Sin embargo, sus mayores influencias artísticas vinieron de la mano de su padre -quien había estudiado pintura en Bellas Artes-, de su amistad con Carlos Gorriarena y del contacto permanente con artistas plásticos en las década
+                del '70 y del '80. Debido a la efervescencia política que caracterizó a nuestro país, en los años '70 abandonó arquitectura en pos de la entonces recientemente creada carrera de Sociología que, por aquel momento, dirigía Gino Germani.
+                <br><br> Estudió Ciencias Sociales, militó en el movimiento universitario, fue periodista y se dedicó a investigar temas de sociología de la comunicación.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Cards panel -->
+  <!-- Principal -->
+
+  <div class="container-fluid" id="cuerpo">
+    <div id="image-logo">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center" id="main">
+          <img src="img\mainlogo.png" class="center-block img-responsive" alt="iso-sociodivagaciones" id="mainlogo">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Tarjetas-->
 
   <div class="container" id="cards-panel">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <div class="caja">
-          <img class="card-img-top" src="http://lorempixel.com/395/250" alt="Card image cap">
-          <div class="card-block">
-            <div id="containerlabel">
-              <label>relatos mínimos</label>
-            </div>
-
-            <h4 class="card-title">conejos, hierba y política</h4>
-            <h5 class="card-subtitle">La fábula de Cristina y los conejos</h5>
-
-            <h6 class="date">Dic.2017</h6>
-
-            <article class="relatos-minimos">
-              Después de muchos años de lidiar ante la Justicia para rescatar algo de su patrimonio y viendo que a nadie importaba ya su destino, Cristina decidió retirarse para siempre del escenario y dedicarse a criar...
-            </article>
+        <div class="thumbnail">
+          <a href="./conejos-hierbas-politica.html">
+            <img src="img\conejos_580_320.jpg" alt="Cristina Kirchner rodeada de militantes juveniles">
+            <div class="caption">
+            <label>relatos mínimos</label>
+            <h4>conejos, hierbas y política</h4>
+            <h5>La fábula de Cristina y los conejos</h5>
+            <h6>Mar.2017</h6>
+            <p>Después de muchos años de lidiar ante la Justicia para rescatar
+            algo de su patrimonio y viendo que a nadie importaba ya su destino,
+            Cristina decidió retirarse para siempre del escenario y dedicarse<b>...</b>
+            </p>
           </div>
+          </a>
         </div>
       </div>
 
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <div class="caja">
-          <img class="card-img-top" src="http://lorempixel.com/395/250" alt="Card image cap">
-          <div class="card-block">
-            <div id="containerlabel">
-              <label>relatos mínimos</label>
-            </div>
-
-            <h4 class="card-title">agonía</h4>
-            <h5 class="card-subtitle">***</h5>
-
-            <h6 class="date">Dic.2017</h6>
-
-            <article class="relatos-minimos">
-              ¿Usted me pregunta por mis impresiones acerca de Agonia? Bien, le diré: es el peor de los mundos que conozco; un verdadero infierno cotidiano. La mayoría de los habitantes de esa isla estéril son algo así como...
-            </article>
-          </div>
+        <div class="thumbnail" id="lo-vuolo">
+          <a href="./lo-vuolo.html">
+            <img src="img\vuolo_580_320.jpg" alt="New Orleans. Parque de diversiones abandonado después de Katrina">
+              <div class="caption">
+                <label>cajón de sastre</label>
+                <h4>lo vuolo</h4>
+                <h5>***</h5>
+                <h6>Mar.2016</h6>
+                <p>
+                  En la escuela secundaria tenía un profesor de religión, un piadoso
+                  y honesto curita, que solía explicarnos cómo podía erradicarse de
+                  una vez para siempre a todos los delitos comunes. Sostenía que<b>...</b>
+                </p>
+              </div>
+            </a>
         </div>
       </div>
 
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <div class="caja">
-          <img class="card-img-top" src="http://lorempixel.com/395/250" alt="Card image cap">
-          <div class="card-block">
-            <div id="containerlabel">
-              <label>relatos mínimos</label>
+        <div class="thumbnail" id="agonia">
+          <a href="./agonia.html">
+            <img src="img\agonia_580_320.jpg" alt="Buenos Aires, Palermo invadido de palomas">
+            <div class="caption">
+                <label>relatos mínimos</label>
+                <h4>agonía</h4>
+                <h5>***</h5>
+                <h6>Jun.2017</h6>
+                <p>
+                  ¿Usted me pregunta por mis impresiones acerca de Agonia? Bien,
+                  le diré: es el peor de los mundos que conozco; un verdadero
+                  infierno cotidiano. La mayoría de los habitantes de esa isla
+                  estéril son<b> ...</b>
+                </p>
             </div>
-
-            <h4 class="card-title">conejos, hierba y política</h4>
-            <h5 class="card-subtitle">La fábula de Cristina y los conejos</h5>
-
-            <h6 class="date">Dic.2017</h6>
-
-            <article class="relatos-minimos">
-              Después de muchos años de lidiar ante la Justicia para rescatar algo de su patrimonio y viendo que a nadie importaba ya su destino, Cristina decidió retirarse para siempre del escenario y dedicarse a criar...
-            </article>
-          </div>
+          </a>
         </div>
       </div>
 
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <div class="caja">
-          <img class="card-img-top" src="http://lorempixel.com/395/250" alt="Card image cap">
-          <div class="card-block">
-            <div id="containerlabel">
-              <label>relatos mínimos</label>
+        <div class="thumbnail" id="mujer-islamica">
+          <a href="./mujer-islamica.html">
+            <img src="img\islamica_580_320.jpg" alt="Bélgica contra laidaciones en Irán">
+            <div class="caption">
+                <label>explorando fronteras</label>
+                <h4>mujer Islámica</h4>
+                <h5>***</h5>
+                <h6>Ene.2017</h6>
+                <p>
+                  No creo equivocarme si afirmo que en casi todos los países con
+                  algún grado de desarrollo cultural y mediático existe el consenso
+                  de que el conjunto de las mujeres islámicas –desde Paquistán
+                  hasta<b>...</b>
+                </p>
             </div>
-
-            <h4 class="card-title">agonía</h4>
-            <h5 class="card-subtitle">***</h5>
-
-            <h6 class="date">Dic.2017</h6>
-
-            <article class="relatos-minimos">
-              ¿Usted me pregunta por mis impresiones acerca de Agonia? Bien, le diré: es el peor de los mundos que conozco; un verdadero infierno cotidiano. La mayoría de los habitantes de esa isla estéril son algo así como...
-            </article>
-          </div>
+          </a>
         </div>
       </div>
 
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <div class="caja">
-          <img class="card-img-top" src="http://lorempixel.com/395/250" alt="Card image cap">
-          <div class="card-block">
-            <div id="containerlabel">
-              <label>relatos mínimos</label>
+        <div class="thumbnail" id="erologica">
+          <a href="./erologica.html">
+            <img src="img\erologica_580_320.jpg" alt="Comparsa Scola do Samba del carnaval de Rio">
+            <div class="caption">
+                <label>relatos mínimos</label>
+                <h4>erológica</h4>
+                <h5>***</h5>
+                <h6>Oct.2015</h6>
+                <p>
+                  He descubierto que con un poquito de habilidad, algo de imaginación y capacidad para el macaneo, es posible formalizar cualquier cosa. Dado que ahora hay muchas lógicas dando vueltas por ahí<b> ...</b>
+                </p>
             </div>
-
-            <h4 class="card-title">conejos, hierba y política</h4>
-            <h5 class="card-subtitle">La fábula de Cristina y los conejos</h5>
-
-            <h6 class="date">Dic.2017</h6>
-
-            <article class="relatos-minimos">
-              Después de muchos años de lidiar ante la Justicia para rescatar algo de su patrimonio y viendo que a nadie importaba ya su destino, Cristina decidió retirarse para siempre del escenario y dedicarse a criar...
-            </article>
-          </div>
+          </a>
         </div>
       </div>
 
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <div class="caja">
-          <img class="card-img-top" src="http://lorempixel.com/395/250" alt="Card image cap">
-          <div class="card-block">
-            <div id="containerlabel">
-              <label>relatos mínimos</label>
+        <div class="thumbnail" id="horacio-gonzalez">
+          <a href="./horacio-gonzalez.html">
+          <img src="img\gonzalez_580_320.jpg" alt="Santa Cruz, protesta contra el ajuste">
+            <div class="caption">
+              <label>cajón de sastre</label>
+              <h4>sobre Horacio González y su folletín</h4>
+              <h6>Mar.2016</h6>
+              <p>
+                Si Macri hubiera asumido en este país con una tasa de inflación “normal” –digamos del 5% anual- superávit de la balanza comercial, de la balanza de pagos y del presupuesto nacional y hubiera<b> ...</b>
+              </p>
             </div>
-
-            <h4 class="card-title">agonía</h4>
-            <h5 class="card-subtitle">***</h5>
-
-            <h6 class="date">Dic.2017</h6>
-
-            <article class="relatos-minimos">
-              ¿Usted me pregunta por mis impresiones acerca de Agonia? Bien, le diré: es el peor de los mundos que conozco; un verdadero infierno cotidiano. La mayoría de los habitantes de esa isla estéril son algo así como...
-            </article>
-          </div>
+        </a>
         </div>
       </div>
 
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <div class="caja">
-          <img class="card-img-top" src="http://lorempixel.com/395/250" alt="Card image cap">
-          <div class="card-block">
-            <div id="containerlabel">
-              <label>relatos mínimos</label>
+        <div class="thumbnail" id="ciclos-politicos">
+          <a href=".\ciclos-politicos.html">
+          <img src="img\ciclos_580_320.jpg" alt="Buenos Aires, protesta por las condiciones de viaje en subte">
+            <div class="caption">
+              <label>explorando fronteras</label>
+              <h4>los ciclos politicos de la Argentina democrática
+              <br><b>(1983-2008)</b></h4>
+              <h6>Sep.2008</h6>
+              <p>
+                La reciente disputa con el sector agrario en la que se involucrara en estos días el gobierno de Cristina Kirchner ha planteado a los analistas y dirigentes políticos <b> ...</b>
+              </p>
             </div>
-
-            <h4 class="card-title">conejos, hierba y política</h4>
-            <h5 class="card-subtitle">La fábula de Cristina y los conejos</h5>
-
-            <h6 class="date">Dic.2017</h6>
-
-            <article class="relatos-minimos">
-              Después de muchos años de lidiar ante la Justicia para rescatar algo de su patrimonio y viendo que a nadie importaba ya su destino, Cristina decidió retirarse para siempre del escenario y dedicarse a criar...
-            </article>
-          </div>
+        </a>
         </div>
       </div>
 
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <div class="caja">
-          <img class="card-img-top" src="http://lorempixel.com/395/250" alt="Card image cap">
-          <div class="card-block">
-            <div id="containerlabel">
-              <label>relatos mínimos</label>
-            </div>
+        <div class="thumbnail" id="inania">
+          <a href="./inania.html">
+            <img src="img\inania_580_320.jpg" alt="Minero en algún lugar de Africa">
+              <div class="caption">
+                <label>relatos mínimos</label>
+                <h4>inania</h4>
+                <h5>A la manera de Jonathan Swift</h5>
+                <div class="date">
+                  <h6>Feb.2016</h6>
+                </div>
+                <p>
+                  En mis viajes por el trópico que realizara cuando era un joven más impulsivo, tuve la suerte de recalar en una hermosa isla que sus habitantes llamaban Inania. Vivían todos ellos en<b>...</b>
+                </p>
+              </div>
+            </a>
+        </div>
+      </div>
 
-            <h4 class="card-title">agonía</h4>
-            <h5 class="card-subtitle">***</h5>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="thumbnail" id="peligros-previsibles">
+          <a href="./peligros-previsibles.html">
+            <img class="card-img-top" src="img\peligros_580_320.jpg" alt="Pelea de gallos en Santiado del Estero, Argentina">
+              <div class="caption">
+                <label>cajón de sastre</label>
+                <h4>peligros previsibles que deberá sortear el próximo Presidente</h4>
+                <h5>***</h5>
+                <h6 class="date">Jun.2015</h6>
+                <p>
+                  1.La actual es una de las campañas presidenciales más insólitas que haya visto. Me resulta imposible conjeturar quién va a ser<b>...</b>
+                </p>
+              </div>
+          </a>
+        </div>
+      </div>
 
-            <h6 class="date">Dic.2017</h6>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="thumbnail" id="discursos-imposibles">
+          <a href="./discursos-imposibles.html">
+            <img class="card-img-top" src="img\discursos_580_320.jpg" alt="Cannes, manifestante en reunión G20">
+              <div class="caption">
+                <label>explorando fronteras</label>
+                <h4>discursos imposibles</h4>
+                <h5 class="card-subtitle">Discursos políticamente incorrectos para<br><i>The Economist</i></h5>
+                <h6>Dic.2016</h6>
+                <p>
+                  Cuando estaba redactando un trabajo sobre el debate actual en torno a la globalización se me ocurrió que podía “circunscribir” las características de un género periodístico redactando<b>...</b>
+                </p>
+              </div>
+          </a>
+        </div>
+      </div>
 
-            <article class="relatos-minimos">
-              ¿Usted me pregunta por mis impresiones acerca de Agonia? Bien, le diré: es el peor de los mundos que conozco; un verdadero infierno cotidiano. La mayoría de los habitantes de esa isla estéril son algo así como...
-            </article>
-          </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="thumbnail" id="experimentando-apagon">
+          <a href="./experimentando-apagon.html">
+            <img class="card-img-top" src="img\apagon_580_320.jpg" alt="Buenos Aires, protesta por cortes de luz">
+              <div class="caption">
+                <label>relatos mínimos</label>
+                <h4>experimentando un apagón</h4>
+                <h5>***</h5>
+                <h6>Feb.2016</h6>
+                <p>
+                  El día sábado a las 0 horas- antes de se iniciara la tormenta que castigó a la ciudad de Buenos Aires y sus alrededores- se produjo un corte de electricidad en el departamento donde vivo. Me fui a...<b> ...</b>
+                </p>
+              </div>
+            </a>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="thumbnail" id="semantica">
+          <a href="./semantica.html">
+            <img class="card-img-top" src="img\semantica_580_320.jpg" alt="Inglaterra, protesta sindical contra el ajuste">
+              <div class="caption">
+                <label>explorando fronteras</label>
+                <h4>la semántica del siglo pasado</h4>
+                <h5>***</h5>
+                <h6>Oct.2016</h6>
+                <p>
+                  Cuando yo era joven –hace más de medio siglo- la sociedad “apenas existía” para el común de los mortales. Aunque ello pueda resultar ahora increíble, no sólo la sociología era
+                  <b> ...</b>
+                </p>
+              </div>
+            </a>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="thumbnail" id="carta-robada">
+          <a href="./carta-robada.html">
+            <img class="card-img-top" src="img\carta_580_320.jpg" alt="Cannes. G20, manos de Cristina F. de Kirchner y Sarkozy">
+              <div class="caption">
+                <label>relatos mínimos</label>
+                <h4>la carta robada</h4>
+                <h5>Nuevo robo de “La carta robada” de Poe: <br>
+                  la mancha venenosa del pecado</h5>
+                <h6>Jul.2016</h6>
+                <p>
+                  Para mí hay algo evidente: toda interpretación de un mito -o de un texto literario- genera necesariamente otro mito y, por ende, cualquier crítica de aquella no puede presumir que es<b> ...</b>
+                </p>
+              </div>
+            </a>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="thumbnail" id="leyendo-reportes">
+          <a href="./leyendo-reportes.html">
+            <img src="img\leyendo_580_320.jpg" alt="San Fermín. El toro ingresa en la arena">
+              <div class="caption">
+                <label>explorando fronteras</label>
+                <h4>leyendo reportes</h4>
+                <h5>***</h5>
+                <h6 class="date">Dic.2016</h6>
+                <p>
+                  <b>¿La catástrofe que nos amenaza?</b><br>
+                  <br> Hace muchos años compré un libro editado en los EE.UU. en
+                  1996 (¡hace dos décadas!) que comprendía un conjunto<b>...</b>
+                </p>
+              </div>
+            </a>
         </div>
       </div>
     </div>
   </div>
+  <!-- <hr> -->
 
-
-  <hr>
-
-<!-- Footer -->
+  <!-- PIE DE PAGINA -->
 
 <footer>
-  <div class="content-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10 col-lg-offset-1 text-center">
-          <p class="text-muted">Copyright &copy; SocioDivagaciones 2017</p>
-          <p class="text-muted">|</p>
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-          <a href="sociodivagaciones@gmail.com" class="contact-email">sociodivagaciones@gmail.com</a>
-        </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <p class="text-center">Copyright &copy; SocioDivagaciones 2017  |  sociodivagaciones@gmail.com</p>
+      </div>
+      <div class="col-md-3 col-md-offset-3">
+        <img data-toggle="tooltip" data-placement="left" title="Designed and developed by Valeria Gusso." src=".\img\developer.png" alt="vg" id="vale-gusso"></a>
       </div>
     </div>
   </div>
-  <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
 </footer>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<div class='back-to-top' id='back-to-top' title='Back to top'>
+  <i class='fa fa-chevron-up'></i></div>
 
-<!-- Closes the sidebar menu -->
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Menú expandible -->
+
+  <script>
+    $(".menu-collapsed").click(function() {
+      $(this).toggleClass("menu-expanded");
+    });
+  </script>
+
+  <script>
+    $("h3").click(function() {
+      $("h3").toggle();
+    });
+    $("h3").click(function() {
+      $("p").toggle();
+    });
+  </script>
+
+  <!-- Tooltip tool para botón del developer -->
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+<!-- Scroll Up -->
 
 <script>
-  $("#menu-close").click(function(e) {
-    e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-  });
-  // Opens the sidebar menu
-  $("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-  });
+(function() {
+  $(document).ready(function() {
+    return $(window).scroll(function() {
+      return $(window).scrollTop() > 2500 ? $("#back-to-top").addClass("show") :
+      $("#back-to-top").removeClass("show")
+    }), $("#back-to-top").click(function() {
+      return $("html,body").animate({
+        scrollTop: "0"
+      })
+    })
+  })
+}).call(this);
 
 </script>
 
-<!-- Masonry efect -->
+</body>
 
-<script>
-  var $container = $('.contenedor');
-  $container.imagesLoaded(function() {
-    $container.masonry();
-  });
-</script>
-  </body>
 </html>
